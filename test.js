@@ -1,8 +1,31 @@
-// 나머지가 1이 되게하는 수 중에 가장 작은 수
-// x로 나눔
+// 1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수
+// 10이면 2,4,5,7 4개
 function solution(n) {
-  for (let x = 2; x < n; x++) {
-    if (n % x == 1) return x;
+  let primeNum = [];
+  function sol(a) {
+    if (a == 1) return primeNum;
+    for (let i = 2; i < a; i++) {
+      if (a % i == 0) {
+        break;
+      } else if (a - 1 == i) {
+        primeNum.push(a);
+        sol(--a);
+      }
+    }
   }
+  return sol(n);
 }
-console.log(solution(11));
+console.log(solution(10));
+
+// function soluti(n) {
+//   var a = 1;
+//   for (let i = 3x; i <= n; i++) {
+//     for (let ii = 2; ii < i; ii++) {
+//       if (i % ii == 0) break;
+//       else if (i - 1 == ii) {
+//         a++;
+//       }
+//     }
+//   }
+//   return a;
+// }

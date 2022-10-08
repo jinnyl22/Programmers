@@ -1,8 +1,7 @@
-// 세균 증식
-// 1시간에 두배만큼 증식
-function solution(n, t) {
-  for (let i = 1; i <= t; i++) {
-    n = n * 2;
-  }
-  return n;
+// 약수 구하기
+function solution(n) {
+  var answer = [];
+  for (let i = 1; i <= n; i++) n % i == 0 ? answer.push(i) : null;
+  return answer;
 }
+console.log(solution(10));

@@ -1,6 +1,6 @@
-// 두 수의 곱
+// 나머지 구하기
 function solution(num1, num2) {
-  return (answer = num1 * num2);
+  return (answer = num1 % num2);
 }
 
-// console.log(solution(20, 5));
+console.log(solution(20, 5));

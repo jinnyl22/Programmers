@@ -1,6 +1,6 @@
-// 두 수의 차
-function solution(num1, num2) {
-  return (answer = num1 - num2);
-}
+// 나이 출력
+const solution = (age) => {
+  return (answer = 2022 - age + 1);
+};
 
-// console.log(solution(20, 5));
+console.log(solution(40));

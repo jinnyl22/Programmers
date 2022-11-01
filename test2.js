@@ -1,6 +1,9 @@
-// 두 수의 나눗셈
-function solution(num1, num2) {
-  return (answer = parseInt((num1 / num2) * 1000));
+// 배열의 평균 값
+// let numbers = [1, 2, 3];
+function solution(numbers) {
+  console.log(numbers);
+  let answer = numbers.reduce((acc, cur) => acc + cur, 0);
+  return answer / numbers.length;
 }
 
-console.log(solution(7, 3));
+// console.log(solution(numbers));

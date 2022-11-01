@@ -1,10 +1,6 @@
-// 짝수의 합
-function solution(n) {
-  let answer = 0;
-  for (let i = 2; i <= n; i++) {
-    if (i % 2 == 0) answer += i;
-  }
-  return answer;
+// 두 수의 나눗셈
+function solution(num1, num2) {
+  return (answer = parseInt((num1 / num2) * 1000));
 }
 
-console.log(solution(4));
+console.log(solution(7, 3));

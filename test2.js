@@ -1,9 +1,10 @@
-// 배열의 평균 값
-// let numbers = [1, 2, 3];
-function solution(numbers) {
-  console.log(numbers);
-  let answer = numbers.reduce((acc, cur) => acc + cur, 0);
-  return answer / numbers.length;
+// 아이스 아메리카노
+function solution(money) {
+  let answer = [];
+  let coffee = parseInt(money / 5500);
+  let coin = money % 5500;
+  answer.push(coffee, coin);
+  return answer;
 }
 
-// console.log(solution(numbers));
+// console.log(solution(20000));

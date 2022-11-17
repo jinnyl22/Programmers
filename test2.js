@@ -1,10 +1,12 @@
-// 아이스 아메리카노
-function solution(money) {
+// 머쓱이보다 키 큰 사람
+function solution(array, height) {
   let answer = [];
-  let coffee = parseInt(money / 5500);
-  let coin = money % 5500;
-  answer.push(coffee, coin);
-  return answer;
+  array.map((el) => {
+    if (height < el) {
+      answer.push(el);
+    }
+  });
+  return answer.length;
 }
 
-// console.log(solution(20000));
+// console.log(solution([149, 180, 192, 170], 167));

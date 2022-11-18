@@ -1,7 +1,8 @@
-// 중복된 숫자 개수
-function solution(array, n) {
-  let answer = array.filter((el) => el == n);
-  return answer.length;
+// 피자 나눠 먹기
+function solution(n) {
+  let pizza = 0;
+  n % 7 == 0 ? (pizza = n / 7) : (pizza = parseInt(n / 7) + 1);
+  return pizza;
 }
 
-// console.log(solution([1, 1, 2, 3, 4, 5], 1));
+// console.log(solution(15));

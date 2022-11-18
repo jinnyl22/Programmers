@@ -1,12 +1,7 @@
-// 머쓱이보다 키 큰 사람
-function solution(array, height) {
-  let answer = [];
-  array.map((el) => {
-    if (height < el) {
-      answer.push(el);
-    }
-  });
+// 중복된 숫자 개수
+function solution(array, n) {
+  let answer = array.filter((el) => el == n);
   return answer.length;
 }
 
-// console.log(solution([149, 180, 192, 170], 167));
+// console.log(solution([1, 1, 2, 3, 4, 5], 1));

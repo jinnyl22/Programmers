@@ -1,8 +1,6 @@
-// 피자 나눠 먹기
-function solution(n) {
-  let pizza = 0;
-  n % 7 == 0 ? (pizza = n / 7) : (pizza = parseInt(n / 7) + 1);
-  return pizza;
+// 배열 뒤집기
+function solution(num_list) {
+  return (answer = num_list.reverse());
 }
 
-// console.log(solution(15));
+// console.log(solution([1, 2, 3]));

@@ -1,6 +1,11 @@
-// 피자 나눠먹기
-function solution(message) {
-  return message.length * 2;
+// 자릿수 더하기
+function solution(n) {
+  let a = n.toString();
+  let answer = 0;
+  for (let i = 0; i < a.length; i++) {
+    answer += parseInt(a[i]);
+  }
+  return answer;
 }
 
-console.log(solution("happy birthday!"));
+// console.log(solution(1234));

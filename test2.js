@@ -1,6 +1,6 @@
 // 피자 나눠먹기
-function solution(slice, n) {
-  return n % slice == 0 ? n / slice : parseInt(n / slice) + 1;
+function solution(message) {
+  return message.length * 2;
 }
 
-// console.log(solution(7, 10));
+console.log(solution("happy birthday!"));

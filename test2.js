@@ -1,7 +1,12 @@
-// 배열 두배 만들기
-function solution(numbers) {
-  const answer = numbers.map((el) => el * 2);
+// n의 배수 고르기
+function solution(n, numlist) {
+  const answer = [];
+  numlist.map((el) => {
+    if (el % n == 0) {
+      answer.push(el);
+    }
+  });
   return answer;
 }
 
-// console.log(solution([1, 2, 3, 4, 5]));
+// console.log(solution(3, [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]));

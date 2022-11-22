@@ -1,11 +1,7 @@
-// 자릿수 더하기
-function solution(n) {
-  let a = n.toString();
-  let answer = 0;
-  for (let i = 0; i < a.length; i++) {
-    answer += parseInt(a[i]);
-  }
+// 배열 두배 만들기
+function solution(numbers) {
+  const answer = numbers.map((el) => el * 2);
   return answer;
 }
 
-// console.log(solution(1234));
+// console.log(solution([1, 2, 3, 4, 5]));

@@ -1,6 +1,6 @@
-// 배열 자르기
-function solution(numbers, num1, num2) {
-  return (answer = numbers.slice(num1, num2 + 1));
+// 배열 원소의 길이
+function solution(strlist) {
+  return strlist.map((el) => el.length);
 }
 
-console.log(solution([1, 2, 3, 4, 5], 1, 3));
+// console.log(solution(["We", "are", "the", "world!"]));

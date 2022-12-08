@@ -1,13 +1,12 @@
-// 특정 문자 제거하기
-function solution(my_string, letter) {
-  const str = my_string.split("");
-  const s = [];
-  str.map((el) => {
-    if (el !== letter) {
-      s.push(el);
+// 짝수는 싫어요
+function solution(n) {
+  const answer = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 == 1) {
+      answer.push(i);
     }
-  });
-  return s.join("");
+  }
+  return answer;
 }
 
-// console.log(solution("BCBdbe", "B"));
+// console.log(solution(10));

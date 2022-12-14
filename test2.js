@@ -1,12 +1,11 @@
-// 짝수는 싫어요
-function solution(n) {
-  const answer = [];
-  for (let i = 1; i <= n; i++) {
-    if (i % 2 == 1) {
-      answer.push(i);
-    }
-  }
-  return answer;
+// 최댓값 만들기
+function solution(numbers) {
+  const num = numbers
+    .sort((a, b) => {
+      return a - b;
+    })
+    .reverse();
+  return num[0] * num[1];
 }
 
-// console.log(solution(10));
+// console.log(solution([0, 31, 24, 10, 1, 9]));
